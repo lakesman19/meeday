@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:wght@600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Averia Serif Libre ;
+}
+#sections{
+    background: url(/images/Rectangle.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#sections #nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo p{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 30px;
+}
+.nav .menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav .menu ul li{
+    padding: 0px 30px;
+}
+.menu ul li a {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    color: #FFFFFF;
+}
+.menu ul li a::before{
+    position: absolute;
+    /* padding: 20px; */
+    content: '';
+    background: #FFFFFF;
+    height: 5px;
+    width: 0%;
+    left: 0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.menu ul li a:hover::before{
+    width: 100%;
+}
+#sections #hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 40px;
+}
+.hero-img{
+    width: 50%;
+}
+.hero-img img {
+    width: 80%;
+    z-index: 10;
+
+}
+.hero-text{
+    width: 50%;
+}
+.hero-text h1{
+    text-transform: capitalize;
+    font-size:7rem;
+    font-weight: 400;
+    color: #F5D7D7;
+}
+.product{
+    text-transform: capitalize;
+    background-color: #F5D7D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+/* about */
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#FFEBEB;
+    /* position: absolute; */
+}
+.about{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+.abouts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.about h1{
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 50px;
+    position: relative;
+    /* border: black solid; */
+}
+.about h1 img {
+    position: absolute;
+    bottom: -10%;
+    right: 3%;
+    width: 100%;
+}
+.about-text{
+    width: 50%;
+}
+.about-text h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.about-text p {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 400;
+    width: 80%;
+    margin-top: 50px;
+}
+.about-img{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.about-img img{
+    width: 80%;
+}
+.img1{
+    position: absolute;
+    top:100%;
+    /* z-index: 1; */
+    /* width: 75%;  */
+}
+.img1 img{
+    width: 85%; 
+}
+/* end about */
+/* works */
+.works h1{
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 50px;
+    position: relative;
+    /* border: black solid; */
+}
+.works h1 img {
+    position: absolute;
+    bottom: -10%;
+    right: 3%;
+    width: 100%;
+}
+#works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F8D3A6;
+    /* position: relative; */
+}
+
+.works{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+.workss{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 40px;
+    margin-top:40px ;
+}
+.work2{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: #FF7979D9;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 40px;
+}
+.work2:hover .overlay{
+    opacity: 0.8;
+}
+
