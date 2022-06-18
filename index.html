@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <title>meeday</title>
 </head>
 <body>
@@ -17,11 +19,22 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">case study</li></a>
-                        <li><a href="#">contact</li></a>
-                        <li><a href="#">about me</li></a>
+                        <li><a href="#works">case study</li></a>
+                        <li><a href="#contacts">contact</li></a>
+                        <li><a href="#about">about me</li></a>
                     </ul>
+                    <button>
+                        <span class="material-symbols-sharp" id="close">
+                            close
+                        </span>
+                </button>
                 </div>
+                <nav-sidebar>
+                    <img src="/images/Vector (15).png" alt="">
+                </nav-sidebar>
+                <!-- <button id="menu-btn">
+                    <span class="material-symbols-sharp">menu</span>
+                    </button> -->
             </div>
         </nav>
         <section id="hero-section">
@@ -64,27 +77,47 @@
         <div class="works">
           <h1>my works <img src="/images/Vector 1.png" alt=""> </h1> 
            <div class="workss">
-                <div class="work1">
-                    <img src="/images/Rectangle 7 (1).png" alt="">
-                </div>
-                <div class="work2">
-                    <img src="/images/Rectangle 8.png" alt="">
-                    <div class="overlay">
-                        <div class="content">
-                            <a href=""><img src="/images/Vector (13).png" alt=""></a>
-                            <p>E-learning Casestudy</p>
+                <div class="first">
+                    <div class="work1">
+                        <img src="/images/Rectangle 7 (2).png" alt="">
+                    </div>
+                    <div class="work2">
+                        <img src="/images/Rectangle 8.png" alt="">
+                        <div class="overlay">
+                            <div class="content">
+                                <a href="http://uxfol.io/p/cbde5a7c/03e2069a"><img src="/images/Vector (13).png" alt=""></a>
+                                <p>E-learning Casestudy</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="work1">
-                    <img src="/images/Rectangle 9.png" alt="">
-                </div>
-                <div class="work1">
-                    <img src="/images/Rectangle 9.png" alt="">
+                <div class="second">
+                    <div class="work1">
+                        <img src="/images/Rectangle 9.png" alt="">
+                    </div>
+                    <div class="work1">
+                        <img src="/images/Rectangle 9.png" alt="">
+                    </div>
                 </div>
            </div>
         </div>
     </section>
-   
+    <section id="contacts">
+        <div class="contacts">
+            <h1>balogun ayanfe olamide/ <span>ui/ux</span></h1>
+            <div class="contact">
+                <div class="twi">
+                    <a href="#"><img src="/images/twitter (1).png" alt=""></a>
+                </div>
+                <div class="in">
+                    <a href="#"><img src="/images/linkedin (1).png" alt=""></a>
+                </div>
+                <div class="gmail">
+                    <a href="#"> <img src="/images/gmail.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+   <script src="/index.js"></script>
 </body>
 </html>
